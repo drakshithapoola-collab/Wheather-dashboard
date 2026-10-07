@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌤️ Weather App</h1>
+
+        <p class="subtitle">
+            Search current weather by city
+        </p>
+
+
+        <!-- Search Section -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name"
+            >
+
+            <button id="searchButton">
+                Search
+            </button>
+
+        </div>
+
+
+        <!-- Error Message -->
+
+        <p id="errorMessage"></p>
+
+
+        <!-- Loading Message -->
+
+        <p id="loading">
+            Loading...
+        </p>
+
+
+        <!-- Weather Card -->
+
+        <div
+            id="weatherCard"
+            class="weather-card"
+        >
+
+            <h2 id="cityName">
+                City
+            </h2>
+
+            <div class="weather-icon" id="weatherIcon">
+                🌤️
+            </div>
+
+            <h3 id="temperature">
+                --°C
+            </h3>
+
+            <p id="condition">
+                Weather condition
+            </p>
+
+
+            <div class="weather-details">
+
+                <div>
+                    <strong>💧</strong>
+                    <p>Humidity</p>
+                    <span id="humidity">--%</span>
+                </div>
+
+                <div>
+                    <strong>💨</strong>
+                    <p>Wind Speed</p>
+                    <span id="wind">-- km/h</span>
+                </div>
+
+                <div>
+                    <strong>🌡️</strong>
+                    <p>Feels Like</p>
+                    <span id="feelsLike">--°C</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
